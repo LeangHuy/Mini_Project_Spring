@@ -5,10 +5,15 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
-@NoArgsConstructor
+import java.util.UUID;
+
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
-public class UserRes {
-    private String token;
+@Data
+public class AppUserResponse {
+    private UUID userId;
+    private String email;
+    private String profileImage;
 }
+
